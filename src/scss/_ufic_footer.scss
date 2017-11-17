@@ -1,0 +1,12 @@
+#ufic-footer {
+	@include flexbox();
+	justify-content: space-between;
+	align-items: center;
+	// Stub for temporary design goal
+	nav { flex: 1; } 
+	.ufic-header-top-menu {
+		@include flexbox();
+		justify-content: space-around;
+	}
+	// End temporary stub
+}

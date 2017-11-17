@@ -1,0 +1,66 @@
+#ufic-header-top {
+  background-color: $header-top-bgcolor;
+//  @include flexbox();
+//  align-items: center;
+//  justify-content: space-around;
+  position: relative;
+  height: 174px;
+  & > div {
+    display: inline-block;
+  }
+}
+
+#block-uficlogo, #block-uficbrandname {
+  float: left;
+}
+#block-uficlangswitch, #block-uficsociallink {
+  position: absolute;
+  right: 32px;
+}
+
+#block-uficlogo {
+//  vertical-align: top;
+  margin: 40px 0px 0px 32px;
+  p {
+    text-align: center;
+  }
+  img {
+    width: 150px;
+    height: 60px;
+  }
+  & > div:nth-of-type(2) p {
+    font-family: Philosopher;
+    font-size: 150%;
+    font-weight: bold;
+    text-shadow: 5px 4px 5px #688a97;
+  }
+}
+
+#block-uficbrandname {
+  width: 260px;
+  margin: 40px 0px 40px 0px;
+  p {
+    font-family: Marckscript;
+    font-size: 150%;
+    font-weight: bold;
+    text-shadow: 5px 4px 5px #688a97;
+    text-align: center;
+  }
+} 
+
+#block-uficlangswitch {
+  bottom: 50px;
+  margin: 0px 0px 0px 0px;
+}
+
+#block-uficsociallink {
+  top: 55px;
+  ul { margin: 0px;}
+   li {
+    display: inline-block;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0px 0.2em;
+      a { color: #1263b5; }
+  }
+}

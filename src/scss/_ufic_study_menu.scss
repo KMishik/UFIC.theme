@@ -1,0 +1,33 @@
+.ufic-study-menu {
+  list-style: none;
+  @include flexbox();
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  margin: 5em 0 3em 0;
+}
+
+.ufic-study-menu > li > a {
+  padding: 5px 10px 7px;
+  position: relative;
+  border: 1px solid #446d88;
+  background: #58a linear-gradient(#77a0bb, #58a);
+  background: -moz-linear-gradient(top, #77a0bb, #58a);
+  background: -o-linear-gradient(top, #77a0bb, #58a);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#77a0bb), to(#58a));
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px 0px grey;
+  -moz-box-shadow: 5px 5px 5px 0px grey;
+  -webkit-box-shadow: 5px 5px 5px 0px grey;
+  color: white;
+  text-shadow: 0 -1px 1px #335166;
+  font-size: 16px;
+  line-height: 30px;
+
+  &:hover {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    left: 1px;
+    top: 1px;
+  }
+}

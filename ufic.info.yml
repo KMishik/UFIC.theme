@@ -1,0 +1,32 @@
+name: Ufic
+type: theme
+description: 'A responsive Drupal 8 theme for UFIC project'
+core: 8.x
+base theme: false
+
+#libraries-override:
+#  system/base: false
+
+libraries:
+#  - core/jquery # JQuery loads as dependency for ufic-core.js in libraries
+  - ufic/clearstyle
+#  - ufic/bootstrap
+  - ufic/webfonts
+  - ufic/font-awesome
+  - ufic/UFICbase
+
+regions:
+  header_top: 'Header Top'
+  header: 'Header'
+  headline: 'Headline'
+  primary_menu: 'Primary menu'
+  sidebar_first: 'Sidebar first'
+  before_content: 'Before Content'
+  content: 'Content'
+  sidebar_second: 'Sidebar second'
+  after_content: 'After content'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer: 'Footer'
+

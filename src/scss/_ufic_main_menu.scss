@@ -1,0 +1,186 @@
+div {
+  &.menu-home-item {
+    @include flexbox();
+    align-items: center;
+  }
+}
+
+.menu-home-item {
+  margin: 0px 30px 0px 30px;
+  a.menu-home:hover {
+    @include bg-gradient($mainMenuSub);
+    @include brdrad(5,5,5,5);
+    border: 1px solid #777777;
+
+    & i.fa-home {
+      padding: 4px 9px;
+    }
+    
+    i.fa-home::before {
+      color: #161616;
+      text-shadow: 1px 1px 1px #ffffff;
+    }
+  }
+  i.fa-home {
+    padding: 4px 10px;
+    &::before {
+      color: #eeeeee;
+      text-shadow: 1px 1px 1px #000;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.menu-lang-item {
+  & > a {
+    display: inline-block;
+    &:first-child {
+    margin: 0px 4px 0px 30px;
+    }
+    &:last-child {
+    margin: 0px 30px 0px 4px;
+    }
+  }
+}
+
+ul#ufic-main-menu {
+  list-style: none;
+  height: 43px;
+  @include flexbox();
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+
+  & > li {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 4px 10px 4px 10px;
+
+    &:not(.expanded) {
+      padding: 0px 0px 0px 0px;
+    }
+    & > p { white-space: nowrap;}
+    & > p, &:not(.expanded) a {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #eeeeee;
+      text-shadow: 1px 1px 1px #000;
+    }
+    &:not(.expanded) a {
+      display: block;
+      padding: 4px 10px 4px 10px;
+    }
+    &.expanded > p {
+      padding-right: 21px;
+      background: url(../img/drop.png) no-repeat right;
+    }  
+  }
+
+  & > li:hover {
+    border: 1px solid #777777;
+    padding: 4px 9px 4px 9px;
+    background-color: map-get($mainMenuSub, bgdef);
+    @include brdrad(5,5,0,0);
+
+    &:not(.expanded) {
+      @include brdrad(5,5,5,5);
+      padding: 0px 0px 0px 0px;
+    }
+    & > p, &:not(.expanded) a {
+      color: #161616;
+      text-shadow: 1px 1px 1px #ffffff;
+    }
+    &:not(.expanded) a {
+      padding: 4px 9px 4px 9px; 
+    }
+  }
+
+  @for $i from 1 through $menu_count {
+    & ul.ufic-main-menu-submenu-#{$i} {
+      position: absolute;
+      display: none;
+      text-align: left;
+      //        width: var(--ufic-main-menu-#{$i});
+      width: map-get($ufic-main-menu-width, $i);
+      border: 1px solid #777777;
+      border-top: none;
+      @include bg-gradient($mainMenuSub);
+      @include brdrad(0,5,5,5);
+      & a {
+        display: block;
+        padding: 0.3em 5px;
+        &:hover {
+          background: rgba(97, 138, 170, 0.86);
+          color: white;
+          font-style: italic;
+          font-weight: bold;
+        }
+      }
+      & li:first-child a:hover {
+        @include brdrad(0,5,0,0);
+      }
+      &.to-left li:first-child a:hover {
+        @include brdrad(5,0,0,0);
+      }
+      & li:last-child a:hover {
+        @include brdrad(0,0,5,5);
+      }
+    }
+    & li:hover .ufic-main-menu-submenu-#{$i} {
+      @include flexbox();
+      flex-direction: column;
+      right: auto;
+      left: -1px;
+      top: auto;
+      &.to-left {
+        right: -1px;
+        left: auto;
+        @include brdrad(5,0,5,5);
+      }
+    }
+  }
+ }
+
+ul[class*='submenu'] > li.expanded {
+  position: relative;
+  & > ul {
+    position: absolute;
+    left: 188px;
+    top: 0px;
+    display: none;
+    text-align: left;
+    width: 190px;
+    border: 1px solid rgba(97, 138, 170, 0.86);
+    @include bg-gradient($mainMenuSub);
+    @include brdrad(0,5,5,5);
+  }
+  
+  &:hover > ul {
+    display: block;
+  }
+  
+  &:hover > p {
+    background: rgba(97, 138, 170, 0.86);
+    color: white;
+    font-weight: bold;
+  }
+
+  & > p {
+    color: #102bdd;
+    display: block;
+    padding: 5px;
+
+    &::after {
+      content: "\f0da";
+      font-family: FontAwesome;
+      font-size: 1.5em;
+      position: absolute;
+      right: 10px;
+      top: 0px;
+    }
+  }
+}
+
+

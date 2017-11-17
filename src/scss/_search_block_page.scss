@@ -1,0 +1,28 @@
+.header-top-search {
+	margin: 0px 30px 0px 30px;
+	.form-actions, .search-block-form,
+	.search-icons .close-form {
+		display: none;
+	}
+	.search-icons a i {
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		background-color: #f5f6f8;
+		border-radius: 50%;
+		text-align: center;
+	}
+	.search-block-form {
+		position: relative;
+		form {
+			position: absolute;
+			right: 52px;
+			top: -30px;
+			#edit-keys, #edit-keys--2 {
+				width: 300px;
+				height: 30px;
+			}
+	  }
+	}
+}

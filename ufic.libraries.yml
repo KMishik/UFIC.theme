@@ -1,0 +1,45 @@
+clearstyle:
+  version: VERSION
+  css:
+    theme:
+      css/reset.css: {}
+
+bootstrap:
+  version: 3.3.7
+  css:
+    theme:
+      vendor/bootstrap/css/bootstrap.min.css: {}
+      vendor/bootstrap/css/bootstrap-theme.min.css: {}
+  js:
+    vendor/bootstrap/js/bootstrap.min.js: {}
+  dependencies:
+    - core/jquery
+      
+font-awesome:
+  version: 4.7.0
+  css:
+    theme:
+      vendor/font-awesome/css/font-awesome.min.css: {}
+
+webfonts:
+  version: VERSION
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto+Slab: { type: external }
+
+UFICbase:
+  version: VERSION
+  css:
+    theme:
+      css/styles.css: {}
+  js:
+    js/ufic-core.js: {}
+  dependencies:
+    - core/jquery
+
+UFICbgslider:
+  version: VERSION
+  js:
+    js/ufic-bgslider.js: {}
+  dependencies:
+    - core/jquery

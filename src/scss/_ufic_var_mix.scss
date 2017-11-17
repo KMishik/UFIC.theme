@@ -1,0 +1,65 @@
+$menu_count: 5;
+$menu_height: 43;
+$header-top-bgcolor: #ccd4e0;
+
+$mainMenu: (
+  bgdef:  #2572e9,
+  gfrom:  #110eeb,
+  gto:    #8ca2bc, 
+);
+
+$mainMenuSub: (
+  bgdef:  #CCD4E3,
+  gfrom:  #CCD4E3,
+  gto:    #BBBBBB, 
+  );
+
+//:root {
+//  --ufic-main-menu-1: 180px;
+//  --ufic-main-menu-2: 300px;
+//  --ufic-main-menu-3: 220px;
+//  --ufic-main-menu-4: 240px;
+//}
+
+$ufic-main-menu-width: (
+  1: 190px,
+  2: 340px,
+  3: 240px,
+  5: 250px,
+);
+
+@mixin bg-gradient($map) {
+  background: map-get($map, bgdef);
+  background: -moz-linear-gradient(top, map-get($map, gfrom), map-get($map, gto));
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(map-get($map, gfrom)), to(map-get($map, gto)));
+}
+
+@mixin brdrad($top-left, $top-right, $bt-right, $bt-left) {
+  border-radius: #{$top-left}px #{$top-right}px #{$bt-right}px #{$bt-left}px;
+  -moz-border-radius: #{$top-left}px #{$top-right}px #{$bt-right}px #{$bt-left}px;
+  -webkit-border-radius: #{$top-left}px #{$top-right}px #{$bt-right}px #{$bt-left}px;
+}
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
