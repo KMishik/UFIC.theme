@@ -1,5 +1,3 @@
-/* start import VARIABLES AND MIXING */
-/* start import FONT-FACE */
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/roboto/Roboto-Regular.ttf");
@@ -54,7 +52,6 @@
   font-weight: normal;
   font-style: normal; }
 
-/* start import UFIC_HEADER_TOP styles */
 #ufic-header-top {
   background-color: #ccd4e0;
   position: relative;
@@ -108,7 +105,6 @@
     #block-uficsociallink li a {
       color: #1263b5; }
 
-/* start import UFIC_MAIN_MENU styles */
 div.menu-home-item {
   display: -webkit-box;
   display: -moz-box;
@@ -475,7 +471,6 @@ ul[class*='submenu'] > li.expanded {
       right: 10px;
       top: 0px; }
 
-/* start import SEARCH_BLOCK_PAGE styles */
 .header-top-search {
   margin: 0px 30px 0px 30px; }
   .header-top-search .form-actions, .header-top-search .search-block-form,
@@ -503,7 +498,6 @@ ul[class*='submenu'] > li.expanded {
         -webkit-border-radius: 3px 3px 3px 3px;
         padding-left: 5px; }
 
-/* start import BgSlider styles */
 #block-views-block-bgslider-views-block-block-1, #block-views-block-bgslider-views-block-block-1 #bgslider-active {
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -530,7 +524,6 @@ ul[class*='submenu'] > li.expanded {
     #block-views-block-bgslider-views-block-block-1 #bgslider-active.hidden {
       opacity: 0; }
 
-/* start import UFIC RSS NEWS aggregation styles */
 div[id*="rss"] div[class*="timestamp"] span {
   text-decoration: underline;
   font-weight: bold;
@@ -573,7 +566,6 @@ div[id*='rss-yandex-bash'] div[class*="description"], div[id*='rss-yandex-russia
   float: left;
   margin-right: 10px; }
 
-/* start import UFIC FOOTER bottom styles */
 #ufic-footer {
   display: -webkit-box;
   display: -moz-box;
@@ -592,7 +584,6 @@ div[id*='rss-yandex-bash'] div[class*="description"], div[id*='rss-yandex-russia
     display: flex;
     justify-content: space-around; }
 
-/* start import UFIC NEWS FULL bottom styles */
 .ufic-news-full > div:nth-of-type(1) {
   font-family: Philosopher, Arial, sans-serif;
   font-weight: bold;
@@ -636,7 +627,6 @@ div[id*='rss-yandex-bash'] div[class*="description"], div[id*='rss-yandex-russia
   letter-spacing: -1px;
   font-style: italic; }
 
-/* Start UNC site styles  */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -650,7 +640,6 @@ body {
   font-family: Roboto, Calibri, Vernada;
   min-width: 1000px; }
 
-/* bootstrap styles start */
 html {
   -webkit-tap-highlight-color: transparent; }
 
@@ -676,7 +665,6 @@ main a, footer a, footer a {
   main a:hover, footer a:hover, footer a:hover {
     text-decoration: underline; }
 
-/* Sticky Header Menu */
 #ufic-header.sticky {
   position: fixed;
   width: 100%;
@@ -711,7 +699,6 @@ div#ufic-content .empty-page {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* bootstrap styles end */
 .layout-container, header, main, footer {
   display: -webkit-box;
   display: -moz-box;

@@ -1,8 +1,5 @@
 #ufic-header-top {
   background-color: $header-top-bgcolor;
-//  @include flexbox();
-//  align-items: center;
-//  justify-content: space-around;
   position: relative;
   height: 150px;
   & > div {
@@ -19,7 +16,6 @@
 }
 
 #block-uficlogo {
-//  vertical-align: top;
   margin: 40px 0px 0px 32px;
   p {
     text-align: center;

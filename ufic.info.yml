@@ -3,14 +3,8 @@ type: theme
 description: 'A responsive Drupal 8 theme for UFIC project'
 core: 8.x
 base theme: false
-
-#libraries-override:
-#  system/base: false
-
 libraries:
-#  - core/jquery # JQuery loads as dependency for ufic-core.js in libraries
   - ufic/clearstyle
-#  - ufic/bootstrap
   - ufic/webfonts
   - ufic/font-awesome
   - ufic/UFICbase

@@ -5,20 +5,10 @@ use Drupal\Core\Url;
 use Drupal\views\ViewExecutable;
 use Drupal\Core\Field\EntityReferenceFieldItemList;
 
-function ufic_preprocess(array &$variables, $hook) {
-
-	return;
-}
-
 function ufic_preprocess_region(array &$variables) {
 
 	$region = $variables['region'];
 	$variables['attributes']['id'][] = 'ufic-' . strtr($region, ['_' => '-']);
-	return;
-}
-
-function ufic_preprocess_region__header_top(array &$variables) {
-
 	return;
 }
 
@@ -43,16 +33,13 @@ function ufic_preprocess_menu__ufic_study_menu(array &$variables) {
 function ufic_preprocess_menu__ufic_main_menu(array &$variables) {
 
 	$variables['attributes'] = array('id' => 'ufic-main-menu');
-//    $variables['attributes']['class'][] = 'ufic-main-menu';
-
-    $attribute = null;
+  $attribute = null;
 	$main_menu_id = 1;
 	$itemsToLeft = count($variables['items'])/2;
 
 	foreach ($variables['items'] as $item) {
 
 		$attribute = $item['attributes'];
-//		$attribute->setAttribute('id','ufic-main-menu-item-' . $main_menu_id);
 		if ($itemsToLeft > 0) {
           $attribute->addClass('ufic-main-menu-submenu-' . $main_menu_id);
         }
@@ -61,8 +48,6 @@ function ufic_preprocess_menu__ufic_main_menu(array &$variables) {
         }
         $itemsToLeft--;
 		$main_menu_id++;
-
-//		addExpandedAttribute($item);
 	}
 
 	return;
@@ -73,21 +58,6 @@ function addExpandedAttribute(array &$menuItem) {
 		$menuItem['attributes']->addClass('expanded');
 		foreach($menuItem['below'] as $subItem) addExpandedAttribute($subItem);
 	}
-
-	return;
-}
-function ufic_preprocess_menu(array &$variables) {
-
-	return;
-}
-
-
-function ufic_preprocess_field__field_ufic_block_images(array &$variables) {
-
-	return;
-}
-
-function ufic_preprocess_node(array &$variables) {
 
 	return;
 }
@@ -109,7 +79,6 @@ function ufic_preprocess_node__ufic_news__full(array &$variables) {
 		if ($tag === 'Поздравления') {
 
 			$variables['content_attributes']['class'] = 'ufic-celebration';
-//		$variables['content']['field_ufic_news_content']['#attributes']['class'][] = 'uficCelebrity';
 			return;
 		}
 	}
@@ -118,54 +87,24 @@ function ufic_preprocess_node__ufic_news__full(array &$variables) {
 
 function ufic_theme_suggestions_node_alter(array &$suggestions, array $variables) {
 
-	/*
-	 * Code below only as example for adding new suggestion to node suggestions list
-	 */
 	$node = \Drupal::request();
 	$name = $node->attributes->get('node');
 	$nodeURI=$node->getRequestUri();
 	if(strpos($nodeURI, 'empty')) {
 		$suggestions[] = 'node__landing_page_empty';
 	}
-	// End example snippet
-
-	return;
-}
-
-function ufic_preprocess_field(array &$variables) {
-
-	return;
-}
-
-function ufic_theme_suggestions_field_alter(array &$suggestions, array $variables) {
-
-	return;
-}
-
-function ufic_preprocess_image(array &$variables) {
-
-	return;
-}
-
-function ufic_theme_suggestions_image_alter(array &$suggestions, array $variables) {
-
 	return;
 }
 
 function ufic_theme_suggestions_container_alter(array &$suggestions, array $variables) {
 
-	/*
-	 * Code below only as example for adding new suggestion to container suggestions list
-	 */
 	if (!empty($variables['element']['#name']) && $variables['element']['#name'] == 'bgslider_views_block' &&
 		!empty($variables['element']['#type']) && $variables['element']['#type'] == 'view' &&
 		!empty($variables['element']['#view']) && $variables['element']['#view'] instanceof \Drupal\views\ViewExecutable)
 	{
-//		$build_suggestions = $variables['element']['#view']->buildThemeFunctions('container');
 		$new_suggestions = array('container__bgslider_views_block__block_1');
 		$suggestions = array_merge($suggestions, $new_suggestions);
 	}
-    // End example snippet
 
 	return;
 }
@@ -207,13 +146,8 @@ function ufic_theme_suggestions_views_view_unformatted_alter(array &$suggestions
 	return;
 }
 
-
 function ufic_preprocess_views_view_field(array &$variables) {
 
 	$output = $variables['field']->advancedRender($variables['row']);
 	return;
 }
-/*
- * For retemplate single field use next template convention and create own template in theme's templates dir.
- * views-view-field--[view_machine_name]--[page OR block machine_name OR LEAVE this to affect all displays]--[field-machine_name].html.twig
- */
