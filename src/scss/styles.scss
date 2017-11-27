@@ -10,6 +10,8 @@
 @import 'search_block_page';
 /* start import BgSlider styles */
 @import 'ufic_bgslider';
+/* start import UFIC RSS NEWS aggregation styles */
+@import 'ufic_rss_news';
 /* start import UFIC FOOTER bottom styles */
 @import 'ufic_footer';
 /* start import UFIC NEWS FULL bottom styles */
@@ -83,7 +85,7 @@ div#ufic-content .empty-page {
 
 .pager {
   padding-left: 0;
-  margin: 20px 0;
+  margin: 50px 0px 20px 0px;
   text-align: center;
   list-style: none;
 
@@ -207,8 +209,13 @@ footer > div {
 #ufic-sidebar-first,
 #ufic-sidebar-second {
   & img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+//    border-radius: 50%;
   }
+}
+
+#block-views-block-ufic-local-news-view-block-1 .views-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

@@ -1,0 +1,53 @@
+div[id*="rss"] {
+	div[class*="timestamp"] {
+		span {
+			text-decoration: underline;
+			font-weight: bold;
+			font-style: italic;
+		}
+	}
+}
+.rss-news-header {
+	position: relative;
+	margin: 10px 0px;
+	&::after {
+		content: "";
+		display: block;
+		visibility: hidden;
+		height: 0px;
+		clear: both;
+	}
+	&>img:nth-of-type(1) {
+		float: left;
+	}
+	&>h2:nth-of-type(1) {
+		margin: 0px;
+		white-space: nowrap;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+//		transform: translate(-50%, -50%);
+	}
+}
+
+div[id*='rss-yandex-bash'], div[id*='rss-yandex-russia'] {
+	div[class*="timestamp"] {
+		text-align: center;
+		margin: 10px 0px 5px 0px;
+	}
+	div.views-row:first-child > div[class*="timestamp"] {
+		position: relative;
+		left: -32px;
+	}
+	div[class*="description"] {
+		text-align: justify;
+	}
+
+}
+.rss-news-header-aside {
+	&>img:nth-of-type(1) {
+		float: left;
+		margin-right: 10px;
+	}
+}

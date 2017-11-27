@@ -2,7 +2,8 @@
 
 use Drupal\Core\Template\Attribute;
 use Drupal\Core\Url;
-use \Drupal\views\ViewExecutable;
+use Drupal\views\ViewExecutable;
+use Drupal\Core\Field\EntityReferenceFieldItemList;
 
 function ufic_preprocess(array &$variables, $hook) {
 
@@ -91,6 +92,46 @@ function ufic_preprocess_node(array &$variables) {
 	return;
 }
 
+function ufic_preprocess_node__ufic_news__full(array &$variables) {
+
+	$elements = $variables['elements'];
+	if (!array_key_exists('field_ufic_news_taxon', $elements)) {
+		return;
+	}
+
+	$taxonItemsList = $elements['field_ufic_news_taxon']['#items'];
+	$countTags = $taxonItemsList->count();
+
+	for ($i = 0; $i < $countTags; $i++) {
+
+		$tag = $elements['field_ufic_news_taxon'][$i]['#title'];
+
+		if ($tag === 'Поздравления') {
+
+			$variables['content_attributes']['class'] = 'ufic-celebration';
+//		$variables['content']['field_ufic_news_content']['#attributes']['class'][] = 'uficCelebrity';
+			return;
+		}
+	}
+	return;
+}
+
+function ufic_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+
+	/*
+	 * Code below only as example for adding new suggestion to node suggestions list
+	 */
+	$node = \Drupal::request();
+	$name = $node->attributes->get('node');
+	$nodeURI=$node->getRequestUri();
+	if(strpos($nodeURI, 'empty')) {
+		$suggestions[] = 'node__landing_page_empty';
+	}
+	// End example snippet
+
+	return;
+}
+
 function ufic_preprocess_field(array &$variables) {
 
 	return;
@@ -107,22 +148,6 @@ function ufic_preprocess_image(array &$variables) {
 }
 
 function ufic_theme_suggestions_image_alter(array &$suggestions, array $variables) {
-
-	return;
-}
-
-function ufic_theme_suggestions_node_alter(array &$suggestions, array $variables) {
-
-	/*
-	 * Code below only as example for adding new suggestion to node suggestions list
-	 */
-    $node = \Drupal::request();
-    $name = $node->attributes->get('node');
-    $nodeURI=$node->getRequestUri();
-    if(strpos($nodeURI, 'empty')) {
-      $suggestions[] = 'node__landing_page_empty';
-    }
-    // End example snippet
 
 	return;
 }

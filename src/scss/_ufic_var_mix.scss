@@ -4,8 +4,11 @@ $header-top-bgcolor: #ccd4e0;
 
 $mainMenu: (
   bgdef:  #2572e9,
-  gfrom:  #110eeb,
-  gto:    #8ca2bc, 
+  gfrom:  #ececf3,
+  gto:    #464457, 
+//  gfrom:  #110eeb,
+//  gto:    #8ca2bc, 
+
 );
 
 $mainMenuSub: (
@@ -55,6 +58,12 @@ $ufic-main-menu-width: (
   flex:  $values;
 }
 
+@mixin transform($function) {
+  -webkit-transform: $function;
+  -moz-transform: $function;
+  -o-transform: $function;
+  transform: $function;
+}
 @mixin order($val) {
   -webkit-box-ordinal-group: $val;
   -moz-box-ordinal-group: $val;
