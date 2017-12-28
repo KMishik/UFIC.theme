@@ -1,6 +1,102 @@
 /* start import VARIABLES AND MIXING */
 /* start import FONT-FACE */
 @font-face {
+  font-family: "Lora";
+  src: url("../fonts/lora/lora-regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/lora/lora-italic.ttf");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/lora/lora-bold.ttf");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/lora/lora-bolditalic.ttf");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "NotoSerif";
+  src: url("../fonts/notoserif/NotoSerif-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "NotoSerif";
+  src: url("../fonts/notoserif/NotoSerif-Italic.ttf");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "NotoSerif";
+  src: url("../fonts/notoserif/NotoSerif-Bold.ttf");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "NotoSerif";
+  src: url("../fonts/notoserif/NotoSerif-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/merriweather/Merriweather-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/merriweather/Merriweather-Italic.ttf");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/merriweather/Merriweather-Bold.ttf");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/merriweather/Merriweather-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/merriweather/Merriweather-Black.ttf");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/merriweather/Merriweather-BlackItalic.ttf");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/merriweather/Merriweather-Light.ttf");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/merriweather/Merriweather-LightItalic.ttf");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
   font-family: "Roboto";
   src: url("../fonts/roboto/Roboto-Regular.ttf");
   font-weight: normal;
@@ -83,12 +179,13 @@
     text-shadow: 5px 4px 5px #688a97; }
 
 #block-uficbrandname {
-  width: 260px;
+  width: 280px;
   margin: 28px 0px 28px 0px; }
   #block-uficbrandname p {
     font-family: Marckscript;
     font-size: 150%;
     font-weight: bold;
+    font-style: normal;
     text-shadow: 5px 4px 5px #688a97;
     text-align: center; }
 
