@@ -33,13 +33,15 @@
 }
 
 #block-uficbrandname {
-  width: 260px;
+  width: 380px;
   margin: 28px 0px 28px 0px;
   p {
-    font-family: Marckscript;
+    font-family: Merriweather;
     font-size: 150%;
-    font-weight: bold;
-    text-shadow: 5px 4px 5px #688a97;
+    font-weight: normal;
+    font-style: normal;
+    color: #c60a07;
+    text-shadow: 3px 2px 5px #c69393;
     text-align: center;
   }
 } 
