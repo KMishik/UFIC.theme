@@ -110,7 +110,7 @@ ul#ufic-main-menu {
       @include brdrad(0,5,5,5);
       & a {
         display: block;
-        padding: 0.3em 5px;
+        padding: 0.3em 20px;
         &:hover {
           background: rgba(97, 138, 170, 0.86);
           color: white;
@@ -147,11 +147,11 @@ ul[class*='submenu'] > li.expanded {
   position: relative;
   & > ul {
     position: absolute;
-    left: 188px;
+    left: 204px;
     top: 0px;
     display: none;
     text-align: left;
-    width: 190px;
+    width: 215px;
     border: 1px solid rgba(97, 138, 170, 0.86);
     @include bg-gradient($mainMenuSub);
     @include brdrad(0,5,5,5);
@@ -170,7 +170,7 @@ ul[class*='submenu'] > li.expanded {
   & > p {
     color: #102bdd;
     display: block;
-    padding: 5px;
+    padding: 5px 5px 5px 20px;
 
     &::after {
       content: "\f0da";

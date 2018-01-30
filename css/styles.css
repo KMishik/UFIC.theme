@@ -294,7 +294,7 @@ ul#ufic-main-menu {
     position: absolute;
     display: none;
     text-align: left;
-    width: 190px;
+    width: 205px;
     border: 1px solid #777777;
     border-top: none;
     background: #CCD4E3;
@@ -305,7 +305,7 @@ ul#ufic-main-menu {
     -webkit-border-radius: 0px 5px 5px 5px; }
     ul#ufic-main-menu ul.ufic-main-menu-submenu-1 a {
       display: block;
-      padding: 0.3em 5px; }
+      padding: 0.3em 20px; }
       ul#ufic-main-menu ul.ufic-main-menu-submenu-1 a:hover {
         background: rgba(97, 138, 170, 0.86);
         color: white;
@@ -343,7 +343,7 @@ ul#ufic-main-menu {
     position: absolute;
     display: none;
     text-align: left;
-    width: 340px;
+    width: 365px;
     border: 1px solid #777777;
     border-top: none;
     background: #CCD4E3;
@@ -354,7 +354,7 @@ ul#ufic-main-menu {
     -webkit-border-radius: 0px 5px 5px 5px; }
     ul#ufic-main-menu ul.ufic-main-menu-submenu-2 a {
       display: block;
-      padding: 0.3em 5px; }
+      padding: 0.3em 20px; }
       ul#ufic-main-menu ul.ufic-main-menu-submenu-2 a:hover {
         background: rgba(97, 138, 170, 0.86);
         color: white;
@@ -392,7 +392,7 @@ ul#ufic-main-menu {
     position: absolute;
     display: none;
     text-align: left;
-    width: 240px;
+    width: 265px;
     border: 1px solid #777777;
     border-top: none;
     background: #CCD4E3;
@@ -403,7 +403,7 @@ ul#ufic-main-menu {
     -webkit-border-radius: 0px 5px 5px 5px; }
     ul#ufic-main-menu ul.ufic-main-menu-submenu-3 a {
       display: block;
-      padding: 0.3em 5px; }
+      padding: 0.3em 20px; }
       ul#ufic-main-menu ul.ufic-main-menu-submenu-3 a:hover {
         background: rgba(97, 138, 170, 0.86);
         color: white;
@@ -451,7 +451,7 @@ ul#ufic-main-menu {
     -webkit-border-radius: 0px 5px 5px 5px; }
     ul#ufic-main-menu ul.ufic-main-menu-submenu-4 a {
       display: block;
-      padding: 0.3em 5px; }
+      padding: 0.3em 20px; }
       ul#ufic-main-menu ul.ufic-main-menu-submenu-4 a:hover {
         background: rgba(97, 138, 170, 0.86);
         color: white;
@@ -500,7 +500,7 @@ ul#ufic-main-menu {
     -webkit-border-radius: 0px 5px 5px 5px; }
     ul#ufic-main-menu ul.ufic-main-menu-submenu-5 a {
       display: block;
-      padding: 0.3em 5px; }
+      padding: 0.3em 20px; }
       ul#ufic-main-menu ul.ufic-main-menu-submenu-5 a:hover {
         background: rgba(97, 138, 170, 0.86);
         color: white;
@@ -539,11 +539,11 @@ ul[class*='submenu'] > li.expanded {
   position: relative; }
   ul[class*='submenu'] > li.expanded > ul {
     position: absolute;
-    left: 188px;
+    left: 204px;
     top: 0px;
     display: none;
     text-align: left;
-    width: 190px;
+    width: 215px;
     border: 1px solid rgba(97, 138, 170, 0.86);
     background: #CCD4E3;
     background: -moz-linear-gradient(top, #CCD4E3, #BBBBBB);
@@ -560,7 +560,7 @@ ul[class*='submenu'] > li.expanded {
   ul[class*='submenu'] > li.expanded > p {
     color: #102bdd;
     display: block;
-    padding: 5px; }
+    padding: 5px 5px 5px 20px; }
     ul[class*='submenu'] > li.expanded > p::after {
       content: "\f0da";
       font-family: FontAwesome;

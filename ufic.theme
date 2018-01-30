@@ -17,6 +17,10 @@ function ufic_preprocess_menu__ufic_header_top_menu(array &$variables) {
 	$variables['attributes']['class'][] = 'ufic-header-top-menu';
 	foreach ($variables['items'] as $item) {
 		$itemUrl = $item['url'];
+		if ($itemUrl->isExternal()){
+			$itemUrl->setOption('attributes', array('target' => '_blank'));
+			continue;
+		}
 		if (!strcmp($itemUrl->getRouteName(), "<front>")) {
 			$itemUrl->setOption('attributes', array('class' => 'fa fa-home'));
 		}
@@ -33,7 +37,9 @@ function ufic_preprocess_menu__ufic_study_menu(array &$variables) {
 function ufic_preprocess_menu__ufic_main_menu(array &$variables) {
 
 	$variables['attributes'] = array('id' => 'ufic-main-menu');
+
   $attribute = null;
+
 	$main_menu_id = 1;
 	$itemsToLeft = count($variables['items'])/2;
 
@@ -48,18 +54,47 @@ function ufic_preprocess_menu__ufic_main_menu(array &$variables) {
         }
         $itemsToLeft--;
 		$main_menu_id++;
+
+		setExtLinkAttribute($item);
+
 	}
 
 	return;
 }
-function addExpandedAttribute(array &$menuItem) {
+function setExtLinkAttribute($menuItem) {
 
 	if (!empty($menuItem['below'])) {
-		$menuItem['attributes']->addClass('expanded');
-		foreach($menuItem['below'] as $subItem) addExpandedAttribute($subItem);
+
+		foreach($menuItem['below'] as $subItem) setExtLinkAttribute($subItem);
 	}
 
+	else {
+		$itemUrl = $menuItem['url'];
+
+		if ($itemUrl->isExternal()){
+
+			$itemUrl->setOption('attributes', array('target' => '_blank'));
+			return;
+		}
+		return;
+	}
+
+}
+function ufic_preprocess_menu(array &$variables) {
+
 	return;
+}
+
+
+function ufic_preprocess_field__field_ufic_block_images(array &$variables) {
+
+	return;
+}
+
+function ufic_preprocess_node(array &$variables) {
+
+	return;
+
 }
 
 function ufic_preprocess_node__ufic_news__full(array &$variables) {
