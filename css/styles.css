@@ -734,6 +734,10 @@ div[id*='rss-yandex-bash'] div[class*="description"], div[id*='rss-yandex-russia
   letter-spacing: -1px;
   font-style: italic; }
 
+/* start import UFIC HANDMADE bottom styles */
+div#handmade-sidebar-first > div {
+  margin-top: 20px; }
+
 /* Start UNC site styles  */
 * {
   -webkit-box-sizing: border-box;
