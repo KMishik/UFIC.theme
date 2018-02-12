@@ -67,11 +67,13 @@
 
     <a id="main-content" class="visually-hidden focusable" tabindex="-1"></a>{# link is in html.html.twig #}
 
+    <aside class="layout-sidebar-first" role="complementary">
     {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
+      {{ page.sidebar_first }}
+    {% else %}
+      {% include '@ufic/handmade/handmade-sidebar-first.html.twig' %}
     {% endif %}
+    </aside>
 
     <div class="layout-content">
       {{ page.content }}
