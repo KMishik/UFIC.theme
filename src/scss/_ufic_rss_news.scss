@@ -1,5 +1,29 @@
-div[id*="rss"] {
-	div[class*="timestamp"] {
+// Style for not rss news blocks instead rss blocks
+div[id^='block-views-block'] .not-rss {
+	div[class*='created'] {
+		span {
+			text-decoration: underline;
+			font-weight: bold;
+			font-style: italic;
+		}
+	}
+}
+div[id*='ufic-russia-news'] .not-rss {
+	div[class*='created'] {
+		text-align: center;
+		margin: 10px 0px 5px 0px;
+	}
+	div.views-row:first-child > div[class*='created'] {
+		position: relative;
+		left: -32px;
+	}
+	div[class*='title'] {
+		text-align: justify;
+	}
+}
+// End style for not rss news blocks
+div[id*='rss'] {
+	div[class*='timestamp'] {
 		span {
 			text-decoration: underline;
 			font-weight: bold;
@@ -32,15 +56,15 @@ div[id*="rss"] {
 }
 
 div[id*='rss-yandex-bash'], div[id*='rss-yandex-russia'] {
-	div[class*="timestamp"] {
+	div[class*='timestamp'] {
 		text-align: center;
 		margin: 10px 0px 5px 0px;
 	}
-	div.views-row:first-child > div[class*="timestamp"] {
+	div.views-row:first-child > div[class*='timestamp'] {
 		position: relative;
 		left: -32px;
 	}
-	div[class*="description"] {
+	div[class*='description'] {
 		text-align: justify;
 	}
 

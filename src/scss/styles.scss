@@ -12,11 +12,13 @@
 @import 'ufic_bgslider';
 /* start import UFIC RSS NEWS aggregation styles */
 @import 'ufic_rss_news';
-/* start import UFIC FOOTER bottom styles */
+/* start import UFIC CONTENT styles */
+@import '_ufic_layout_content';
+/* start import UFIC FOOTER styles */
 @import 'ufic_footer';
-/* start import UFIC NEWS FULL bottom styles */
+/* start import UFIC NEWS FULL styles */
 @import 'ufic_news_full';
-/* start import UFIC HANDMADE bottom styles */
+/* start import UFIC HANDMADE styles */
 @import 'ufic_handmade';
 
 

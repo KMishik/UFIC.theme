@@ -44,6 +44,7 @@ div {
 }
 
 ul#ufic-main-menu {
+  font-family: Georgia, Helvetica, sans-serif;
   list-style: none;
   height: 43px;
   @include flexbox();
@@ -116,7 +117,7 @@ ul#ufic-main-menu {
           background: rgba(97, 138, 170, 0.86);
           color: white;
           font-style: italic;
-          font-weight: bold;
+          font-weight: normal;
         }
       }
       & li:first-child a:hover {
@@ -165,7 +166,7 @@ ul[class*='submenu'] > li.expanded {
   &:hover > p {
     background: rgba(97, 138, 170, 0.86);
     color: white;
-    font-weight: bold;
+    font-weight: normal;
   }
 
   & > p {
@@ -178,8 +179,8 @@ ul[class*='submenu'] > li.expanded {
       font-family: FontAwesome;
       font-size: 1.5em;
       position: absolute;
-      right: 10px;
-      top: 0px;
+      right: 8px;
+      top: -1px;
     }
   }
 }

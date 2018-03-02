@@ -10,6 +10,11 @@ function ufic_preprocess(array &$variables, $hook) {
 	return;
 }
 
+function ufic_preprocess_page__node__101(&$variables) {
+
+	return;
+}
+
 function ufic_preprocess_region(array &$variables) {
 
 	$region = $variables['region'];
@@ -101,6 +106,23 @@ function setExtLinkAttribute($menuItem) {
 
 	return;
 }*/
+
+function ufic_preprocess_menu__contacts_group(array &$variables) {
+
+	foreach ($variables['items'] as $item) {
+		$url = $item['url'];
+		$options = array('attributes' => [
+			'class'=>['use-ajax'],
+			'data-dialog-type' => 'modal',
+		]);
+		$url->setOptions($options);
+	}
+
+	$variables['#attached']['library'][] = 'ufic/UFICajax';
+	return;
+}
+
+
 function ufic_preprocess_menu(array &$variables) {
 
 	return;
