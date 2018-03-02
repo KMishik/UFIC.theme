@@ -43,3 +43,11 @@ UFICbgslider:
     js/ufic-bgslider.js: {}
   dependencies:
     - core/jquery
+
+UFICajax:
+  version: 1.0.0
+  css:
+    theme:
+      css/uficajax.css: {}
+  dependencies:
+    - core/drupal.dialog.ajax

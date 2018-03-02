@@ -6,10 +6,10 @@
 @import 'ufic_bgslider';
 @import 'ufic_rss_news';
 @import 'ufic_footer';
+@import '_ufic_layout_content';
+@import 'ufic_footer';
 @import 'ufic_news_full';
-/* start import UFIC HANDMADE bottom styles */
 @import 'ufic_handmade';
-
 
 * {
   -webkit-box-sizing: border-box;

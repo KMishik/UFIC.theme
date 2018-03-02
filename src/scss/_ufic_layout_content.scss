@@ -1,0 +1,17 @@
+.layout-content {
+  .views-element-container {
+    &[id*='ufic-local-news'] {
+      [class*='news-teaser'] {
+        text-align: justify;
+        margin: 0px 15px 0px 0px;
+      }
+    }
+  }
+  #ufic-content {
+    .ufic-news-full {
+      &>div:nth-of-type(3) {
+        text-align: justify;
+      }
+    }
+  }
+}

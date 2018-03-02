@@ -61,6 +61,7 @@ function ufic_preprocess_menu__ufic_main_menu(array &$variables) {
 
 	return;
 }
+
 function setExtLinkAttribute($menuItem) {
 
 	if (!empty($menuItem['below'])) {
@@ -80,21 +81,20 @@ function setExtLinkAttribute($menuItem) {
 	}
 
 }
-function ufic_preprocess_menu(array &$variables) {
 
+function ufic_preprocess_menu__contacts_group(array &$variables) {
+
+	foreach ($variables['items'] as $item) {
+		$url = $item['url'];
+		$options = array('attributes' => [
+			'class'=>['use-ajax'],
+			'data-dialog-type' => 'modal',
+		]);
+		$url->setOptions($options);
+	}
+
+	$variables['#attached']['library'][] = 'ufic/UFICajax';
 	return;
-}
-
-
-function ufic_preprocess_field__field_ufic_block_images(array &$variables) {
-
-	return;
-}
-
-function ufic_preprocess_node(array &$variables) {
-
-	return;
-
 }
 
 function ufic_preprocess_node__ufic_news__full(array &$variables) {

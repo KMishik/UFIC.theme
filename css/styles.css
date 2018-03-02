@@ -245,6 +245,7 @@ div.menu-home-item {
     margin: 0px 30px 0px 4px; }
 
 ul#ufic-main-menu {
+  font-family: Georgia, Helvetica, sans-serif;
   list-style: none;
   height: 43px;
   display: -webkit-box;
@@ -314,7 +315,7 @@ ul#ufic-main-menu {
         background: rgba(97, 138, 170, 0.86);
         color: white;
         font-style: italic;
-        font-weight: bold; }
+        font-weight: normal; }
     ul#ufic-main-menu ul.ufic-main-menu-submenu-1 li:first-child a:hover {
       border-radius: 0px 5px 0px 0px;
       -moz-border-radius: 0px 5px 0px 0px;
@@ -363,7 +364,7 @@ ul#ufic-main-menu {
         background: rgba(97, 138, 170, 0.86);
         color: white;
         font-style: italic;
-        font-weight: bold; }
+        font-weight: normal; }
     ul#ufic-main-menu ul.ufic-main-menu-submenu-2 li:first-child a:hover {
       border-radius: 0px 5px 0px 0px;
       -moz-border-radius: 0px 5px 0px 0px;
@@ -396,7 +397,7 @@ ul#ufic-main-menu {
     position: absolute;
     display: none;
     text-align: left;
-    width: 265px;
+    width: 282px;
     border: 1px solid #777777;
     border-top: none;
     background: #CCD4E3;
@@ -412,7 +413,7 @@ ul#ufic-main-menu {
         background: rgba(97, 138, 170, 0.86);
         color: white;
         font-style: italic;
-        font-weight: bold; }
+        font-weight: normal; }
     ul#ufic-main-menu ul.ufic-main-menu-submenu-3 li:first-child a:hover {
       border-radius: 0px 5px 0px 0px;
       -moz-border-radius: 0px 5px 0px 0px;
@@ -460,7 +461,7 @@ ul#ufic-main-menu {
         background: rgba(97, 138, 170, 0.86);
         color: white;
         font-style: italic;
-        font-weight: bold; }
+        font-weight: normal; }
     ul#ufic-main-menu ul.ufic-main-menu-submenu-4 li:first-child a:hover {
       border-radius: 0px 5px 0px 0px;
       -moz-border-radius: 0px 5px 0px 0px;
@@ -493,7 +494,7 @@ ul#ufic-main-menu {
     position: absolute;
     display: none;
     text-align: left;
-    width: 250px;
+    width: 255px;
     border: 1px solid #777777;
     border-top: none;
     background: #CCD4E3;
@@ -509,7 +510,7 @@ ul#ufic-main-menu {
         background: rgba(97, 138, 170, 0.86);
         color: white;
         font-style: italic;
-        font-weight: bold; }
+        font-weight: normal; }
     ul#ufic-main-menu ul.ufic-main-menu-submenu-5 li:first-child a:hover {
       border-radius: 0px 5px 0px 0px;
       -moz-border-radius: 0px 5px 0px 0px;
@@ -560,7 +561,7 @@ ul[class*='submenu'] > li.expanded {
   ul[class*='submenu'] > li.expanded:hover > p {
     background: rgba(97, 138, 170, 0.86);
     color: white;
-    font-weight: bold; }
+    font-weight: normal; }
   ul[class*='submenu'] > li.expanded > p {
     color: #102bdd;
     display: block;
@@ -570,8 +571,8 @@ ul[class*='submenu'] > li.expanded {
       font-family: FontAwesome;
       font-size: 1.5em;
       position: absolute;
-      right: 10px;
-      top: 0px; }
+      right: 8px;
+      top: -1px; }
 
 /* start import SEARCH_BLOCK_PAGE styles */
 .header-top-search {
@@ -629,7 +630,23 @@ ul[class*='submenu'] > li.expanded {
       opacity: 0; }
 
 /* start import UFIC RSS NEWS aggregation styles */
-div[id*="rss"] div[class*="timestamp"] span {
+div[id^='block-views-block'] .not-rss div[class*='created'] span {
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic; }
+
+div[id*='ufic-russia-news'] .not-rss div[class*='created'] {
+  text-align: center;
+  margin: 10px 0px 5px 0px; }
+
+div[id*='ufic-russia-news'] .not-rss div.views-row:first-child > div[class*='created'] {
+  position: relative;
+  left: -32px; }
+
+div[id*='ufic-russia-news'] .not-rss div[class*='title'] {
+  text-align: justify; }
+
+div[id*='rss'] div[class*='timestamp'] span {
   text-decoration: underline;
   font-weight: bold;
   font-style: italic; }
@@ -656,22 +673,30 @@ div[id*="rss"] div[class*="timestamp"] span {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 
-div[id*='rss-yandex-bash'] div[class*="timestamp"], div[id*='rss-yandex-russia'] div[class*="timestamp"] {
+div[id*='rss-yandex-bash'] div[class*='timestamp'], div[id*='rss-yandex-russia'] div[class*='timestamp'] {
   text-align: center;
   margin: 10px 0px 5px 0px; }
 
-div[id*='rss-yandex-bash'] div.views-row:first-child > div[class*="timestamp"], div[id*='rss-yandex-russia'] div.views-row:first-child > div[class*="timestamp"] {
+div[id*='rss-yandex-bash'] div.views-row:first-child > div[class*='timestamp'], div[id*='rss-yandex-russia'] div.views-row:first-child > div[class*='timestamp'] {
   position: relative;
   left: -32px; }
 
-div[id*='rss-yandex-bash'] div[class*="description"], div[id*='rss-yandex-russia'] div[class*="description"] {
+div[id*='rss-yandex-bash'] div[class*='description'], div[id*='rss-yandex-russia'] div[class*='description'] {
   text-align: justify; }
 
 .rss-news-header-aside > img:nth-of-type(1) {
   float: left;
   margin-right: 10px; }
 
-/* start import UFIC FOOTER bottom styles */
+/* start import UFIC CONTENT styles */
+.layout-content .views-element-container[id*='ufic-local-news'] [class*='news-teaser'] {
+  text-align: justify;
+  margin: 0px 15px 0px 0px; }
+
+.layout-content #ufic-content .ufic-news-full > div:nth-of-type(3) {
+  text-align: justify; }
+
+/* start import UFIC FOOTER styles */
 #ufic-footer {
   display: -webkit-box;
   display: -moz-box;
@@ -690,7 +715,7 @@ div[id*='rss-yandex-bash'] div[class*="description"], div[id*='rss-yandex-russia
     display: flex;
     justify-content: space-around; }
 
-/* start import UFIC NEWS FULL bottom styles */
+/* start import UFIC NEWS FULL styles */
 .ufic-news-full > div:nth-of-type(1) {
   font-family: Philosopher, Arial, sans-serif;
   font-weight: bold;
@@ -734,7 +759,7 @@ div[id*='rss-yandex-bash'] div[class*="description"], div[id*='rss-yandex-russia
   letter-spacing: -1px;
   font-style: italic; }
 
-/* start import UFIC HANDMADE bottom styles */
+/* start import UFIC HANDMADE styles */
 div#handmade-sidebar-first > div {
   margin-top: 20px; }
 
