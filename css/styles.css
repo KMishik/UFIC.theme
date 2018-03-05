@@ -696,6 +696,35 @@ div[id*='rss-yandex-bash'] div[class*='description'], div[id*='rss-yandex-russia
 .layout-content #ufic-content .ufic-news-full > div:nth-of-type(3) {
   text-align: justify; }
 
+/* start import UFIC ASIDE styles */
+aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row {
+  font-family: Georgia, Helvetica, sans-serif; }
+  aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row [class*="field-created"] {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold; }
+  aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row [class*="field-title"] {
+    font-style: italic;
+    color: #0a001f;
+    text-align: justify;
+    margin: 0px 5px 10px 0px; }
+    aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row [class*="field-title"] .field-content a {
+      color: rgba(0, 0, 0, 0.5); }
+    aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row [class*="field-title"] .field-content::before {
+      font-family: FontAwesome;
+      font-size: 100%;
+      color: green;
+      padding-right: 5px;
+      content: "\f299"; }
+  aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row:nth-of-type(1) [class*="field-title"] {
+    font-style: normal; }
+    aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row:nth-of-type(1) [class*="field-title"] .field-content a {
+      color: inherit; }
+    aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row:nth-of-type(1) [class*="field-title"] .field-content::before {
+      content: "\f1ea";
+      font-size: 150%;
+      color: red; }
+
 /* start import UFIC FOOTER styles */
 #ufic-footer {
   display: -webkit-box;

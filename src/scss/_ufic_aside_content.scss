@@ -1,0 +1,47 @@
+aside {
+  &.layout-sidebar-second {
+    [id*="ufic-local-news-view"] {
+      .views-row {
+        font-family: Georgia, Helvetica, sans-serif;
+        [class*="field-created"] {
+          text-align: center;
+          text-decoration: underline;
+          font-weight: bold;
+        }
+        [class*="field-title"] {
+          font-style: italic;
+          color: #0a001f;
+          text-align: justify;
+          margin: 0px 5px 10px 0px;
+          .field-content {
+            a {
+              color: rgba(0,0,0,0.5);
+            }
+            &::before {
+              font-family: FontAwesome;
+              font-size: 100%;
+              color: green;
+              padding-right: 5px;
+              content: "\f299";
+            }
+          }
+        }
+        &:nth-of-type(1) {
+          [class*="field-title"] {
+            font-style: normal;
+            .field-content {
+              a {
+                color: inherit;
+              }
+              &::before {
+                content: "\f1ea";
+                font-size: 150%;
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
