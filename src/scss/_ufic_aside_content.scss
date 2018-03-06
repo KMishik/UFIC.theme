@@ -26,8 +26,8 @@ aside {
             }
           }
         }
-        &:nth-of-type(1) {
-          [class*="field-title"] {
+        &:first-child {
+          [class*="field-title"]{
             font-style: normal;
             .field-content {
               a {
@@ -42,6 +42,25 @@ aside {
           }
         }
       }
+// Snippet below for find first views-row on admin version
+      .view-local-news-block > .contextual {
+        & + .views-row {
+          [class*="field-title"]{
+            font-style: normal;
+            .field-content {
+              a {
+                color: inherit;
+              }
+              &::before {
+                content: "\f1ea";
+                font-size: 150%;
+                color: red;
+              }
+            }
+          }
+        }
+      }
+// End snippet fot admin version
     }
   }
 }
