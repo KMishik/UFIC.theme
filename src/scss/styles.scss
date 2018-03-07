@@ -126,7 +126,7 @@ div#ufic-content .empty-page {
   flex-direction: column;
 }
 
-header {
+.layout-container > header {
   @extend .layout-container;
   &::after {
     content: "";

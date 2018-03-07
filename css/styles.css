@@ -800,6 +800,8 @@ aside.layout-sidebar-second [id*="ufic-local-news-view"] .view-local-news-block 
 /* start import UFIC HANDMADE styles */
 div#handmade-sidebar-first > div {
   margin-top: 20px; }
+  div#handmade-sidebar-first > div:first-child {
+    margin-top: 0px; }
 
 /* Start UNC site styles  */
 * {
@@ -877,22 +879,22 @@ div#ufic-content .empty-page {
   box-sizing: border-box; }
 
 /* bootstrap styles end */
-.layout-container, header, main, footer {
+.layout-container, .layout-container > header, main, footer {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
 
-.layout-container, header {
+.layout-container, .layout-container > header {
   flex-direction: column; }
 
-header::after {
+.layout-container > header::after, .layout-container > header > header::after {
   content: "";
   display: none;
   height: 43px; }
 
-header.stub::after {
+.layout-container > header.stub::after, .layout-container > header > header.stub::after {
   display: block; }
 
 main, footer {

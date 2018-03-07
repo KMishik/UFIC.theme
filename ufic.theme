@@ -10,6 +10,12 @@ function ufic_preprocess(array &$variables, $hook) {
 	return;
 }
 
+function ufic_preprocess_page (&$variables) {
+
+	$vars = $variables;
+
+	return;
+}
 function ufic_preprocess_page__node__101(&$variables) {
 
 	return;
@@ -136,6 +142,35 @@ function ufic_preprocess_field__field_ufic_block_images(array &$variables) {
 
 function ufic_preprocess_node(array &$variables) {
 
+	// Stub for debug only
+	// $vars = $variables;
+	// ---END Sub---
+
+	$accept_node = [
+		'ufic-vacancy',
+		'ufic-top-manage',
+		'ufic-prezidium',
+		'ufic-structure',
+		'ufic-history',
+		'ufic-invoice',
+	];
+
+	$matches = array();
+
+	$node = $variables['node'];
+	$url = $node->url();
+
+	$pattern = '#/*.*/(.*?-?.+)$#';
+
+	preg_match($pattern, $url, $matches);
+
+	if ((count($matches) == 2) && in_array($matches[1], $accept_node)) {
+
+		$variables['#attached']['library'][] = 'ufic/UFICagile';
+		return;
+
+	}
+
 	return;
 }
 
@@ -174,7 +209,6 @@ function ufic_theme_suggestions_node_alter(array &$suggestions, array $variables
 	if(strpos($nodeURI, 'empty')) {
 		$suggestions[] = 'node__landing_page_empty';
 	}
-	// End example snippet
 
 	return;
 }

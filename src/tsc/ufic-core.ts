@@ -1,3 +1,5 @@
+declare const jQuery: any;
+
 ! function($) {
 	$(document).ready(function() {
 
@@ -19,7 +21,7 @@
 
 		//-- Sticky Header
     (function() {
-      let header = $('header');
+      let header = $('.layout-container > header');
       let fixedElm = $('#ufic-header')
       if(header.length) {
         let elmHeight = $('#ufic-header-top').outerHeight(true);

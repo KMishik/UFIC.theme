@@ -51,3 +51,11 @@ UFICajax:
       css/uficajax.css: {}
   dependencies:
     - core/drupal.dialog.ajax
+
+UFICagile:
+  version: 0.0.1
+  css:
+    theme:
+      css/agile/uficagile.css: {}
+
+

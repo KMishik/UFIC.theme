@@ -17,7 +17,7 @@
         })();
         //-- Sticky Header
         (function () {
-            var header = $('header');
+            var header = $('.layout-container > header');
             var fixedElm = $('#ufic-header');
             if (header.length) {
                 var elmHeight_1 = $('#ufic-header-top').outerHeight(true);
