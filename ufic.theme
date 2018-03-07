@@ -97,6 +97,36 @@ function ufic_preprocess_menu__contacts_group(array &$variables) {
 	return;
 }
 
+function ufic_preprocess_node(array &$variables) {
+
+	$accept_node = [
+		'ufic-vacancy',
+		'ufic-top-manage',
+		'ufic-prezidium',
+		'ufic-structure',
+		'ufic-history',
+		'ufic-invoice',
+	];
+
+	$matches = array();
+
+	$node = $variables['node'];
+	$url = $node->url();
+
+	$pattern = '#/*.*/(.*?-?.+)$#';
+
+	preg_match($pattern, $url, $matches);
+
+	if ((count($matches) == 2) && in_array($matches[1], $accept_node)) {
+
+		$variables['#attached']['library'][] = 'ufic/UFICagile';
+		return;
+
+	}
+
+	return;
+}
+
 function ufic_preprocess_node__ufic_news__full(array &$variables) {
 
 	$elements = $variables['elements'];
@@ -128,6 +158,7 @@ function ufic_theme_suggestions_node_alter(array &$suggestions, array $variables
 	if(strpos($nodeURI, 'empty')) {
 		$suggestions[] = 'node__landing_page_empty';
 	}
+
 	return;
 }
 

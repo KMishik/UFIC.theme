@@ -1,0 +1,16 @@
+div#ufic-structure {
+	.title {
+		font-family: Georgia;
+		font-size: 130%;
+		font-weight: bold;
+		text-align: center;
+		margin: 15px 0px 30px 0px;
+	}
+	.content > ol {
+		list-style-type: decimal;
+		margin: 0px 0px 20px 20px;
+		& > li {
+			padding-left: 5px;
+		}
+	}
+}

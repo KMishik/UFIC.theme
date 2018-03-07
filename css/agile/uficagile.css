@@ -1,0 +1,52 @@
+div#ufic-vacancy .title {
+  font-family: Georgia;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0px 30px 0px; }
+
+div#ufic-vacancy .content {
+  text-align: center;
+  margin-top: 100px; }
+
+div#ufic-history {
+  text-align: justify; }
+  div#ufic-history .title {
+    font-family: Georgia;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0px 30px 0px; }
+  div#ufic-history .content {
+    margin: 0px 10px 0px 0px; }
+    div#ufic-history .content p {
+      margin: 0px 0px 10px 0px;
+      text-indent: 30px; }
+      div#ufic-history .content p::before {
+        font-family: FontAwesome;
+        content: '\f299';
+        color: #b1069b;
+        position: relative;
+        left: -15px; }
+
+div#ufic-invoice {
+  text-align: justify; }
+  div#ufic-invoice .title {
+    font-family: Georgia;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0px 30px 0px; }
+
+div#ufic-structure .title {
+  font-family: Georgia;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0px 30px 0px; }
+
+div#ufic-structure .content > ol {
+  list-style-type: decimal;
+  margin: 0px 0px 20px 20px; }
+  div#ufic-structure .content > ol > li {
+    padding-left: 5px; }
