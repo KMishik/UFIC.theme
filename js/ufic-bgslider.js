@@ -12,6 +12,14 @@ var BgSlider = /** @class */ (function () {
             '/themes/custom/ufic/img/bgslides/8.jpg',
             '/themes/custom/ufic/img/bgslides/9.jpg',
             '/themes/custom/ufic/img/bgslides/10.jpg',
+            '/themes/custom/ufic/img/bgslides/11.jpg',
+            '/themes/custom/ufic/img/bgslides/12.jpg',
+            '/themes/custom/ufic/img/bgslides/13.jpg',
+            '/themes/custom/ufic/img/bgslides/14.jpg',
+            '/themes/custom/ufic/img/bgslides/15.jpg',
+            '/themes/custom/ufic/img/bgslides/16.jpg',
+            '/themes/custom/ufic/img/bgslides/17.jpg',
+            '/themes/custom/ufic/img/bgslides/18.jpg',
         ];
         this.currentImg = 1;
         this.activeLayer = $('#bgslider-active');

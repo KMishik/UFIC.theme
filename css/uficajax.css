@@ -1,0 +1,43 @@
+#block-contactsgroup > h2 {
+  font-family: Georgia;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0px 30px 0px; }
+
+#block-contactsgroup > ul {
+  margin: 0px 0px 0px 20px;
+  list-style: disc outside;
+  line-height: 2em; }
+  #block-contactsgroup > ul li {
+    padding: 0px 0px 0px 5px; }
+    #block-contactsgroup > ul li a:hover {
+      color: blue; }
+    #block-contactsgroup > ul li a:focus {
+      outline: 0px;
+      outline-offset: 0px; }
+
+.ui-dialog *:focus {
+  outline: 0px;
+  outline-offset: 0px; }
+
+.ui-dialog .ui-dialog-titlebar {
+  text-align: center; }
+
+table.contacts-wrap > tbody > tr > td > p:nth-of-type(1) {
+  font-weight: bold;
+  text-align: center; }
+
+table.contacts-wrap > tbody > tr > td > p:nth-of-type(2) a {
+  color: blue;
+  display: inline-block;
+  border-bottom: blue solid 0.5px; }
+
+table.contacts-group {
+  width: 100%;
+  font-size: 90%;
+  margin-bottom: 30px; }
+  table.contacts-group tr > td:nth-of-type(3) {
+    white-space: nowrap; }
+  table.contacts-group tr > td:nth-of-type(2) {
+    font-weight: bold; }
