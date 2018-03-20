@@ -1,0 +1,37 @@
+div#ufic-top-manage {
+  & > p {
+    font-family: Georgia;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0px 80px 0px;
+  }
+  .person {
+    margin: 0px 0px 40px 40px;
+    p:last-child::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .position {
+      line-height: 40px;
+      font-size: 20px;
+    }
+    .name {
+      img {
+        float: left;
+        padding-right: 20px;
+      }
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+  .person:nth-of-type(1) {
+    .name {
+      span {
+        font-size: 35px;
+      }
+    }
+  }
+}

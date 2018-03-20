@@ -50,3 +50,28 @@ div#ufic-structure .content > ol {
   margin: 0px 0px 20px 20px; }
   div#ufic-structure .content > ol > li {
     padding-left: 5px; }
+
+div#ufic-top-manage > p {
+  font-family: Georgia;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0px 80px 0px; }
+
+div#ufic-top-manage .person {
+  margin: 0px 0px 40px 40px; }
+  div#ufic-top-manage .person p:last-child::after {
+    content: "";
+    display: table;
+    clear: both; }
+  div#ufic-top-manage .person .position {
+    line-height: 40px;
+    font-size: 20px; }
+  div#ufic-top-manage .person .name img {
+    float: left;
+    padding-right: 20px; }
+  div#ufic-top-manage .person .name span {
+    font-size: 30px; }
+
+div#ufic-top-manage .person:nth-of-type(1) .name span {
+  font-size: 35px; }
