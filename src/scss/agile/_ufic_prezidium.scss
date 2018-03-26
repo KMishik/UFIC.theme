@@ -1,0 +1,22 @@
+div#ufic-prezidium {
+  p.title {
+    font-family: Georgia;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0px 20px 0px;  
+  }
+  table {
+    width: 650px;
+    margin: auto;
+
+    & th {
+      background-color: #3b70b8;
+      color: white;
+    }
+    td {
+      padding: 5px;
+      white-space: nowrap;
+    }
+  }
+}
