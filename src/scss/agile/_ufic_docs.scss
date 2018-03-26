@@ -1,0 +1,66 @@
+article {
+  .title {
+    font-family: Georgia;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 5px 30px 5px;
+  }
+}
+span.file::after {
+  font-family: FontAwesome;
+  content: "\f08e";
+  color: blue;
+  padding-left: 10px;
+}
+.file {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  min-height: 16px;
+  background-repeat: no-repeat;
+  background-position: left center; 
+}
+.file--general,
+.file--application-octet-stream {
+  background-image: url(../../img/file-type/application-octet-stream.png);
+}
+.file--package-x-generic {
+  background-image: url(../../img/file-type/package-x-generic.png);
+}
+.file--x-office-spreadsheet {
+  background-image: url(../../img/file-type/x-office-spreadsheet.png);
+}
+.file--x-office-document {
+  background-image: url(../../img/file-type/x-office-document.png);
+}
+.file--x-office-presentation {
+  background-image: url(../../img/file-type/x-office-presentation.png);
+}
+.file--text-x-script {
+  background-image: url(../../img/file-type/text-x-script.png);
+}
+.file--text-html {
+  background-image: url(../../img/file-type/text-html.png);
+}
+.file--text-plain {
+  background-image: url(../../img/file-type/text-plain.png);
+}
+.file--application-pdf {
+  background-image: url(../../img/file-type/application-pdf.png);
+}
+.file--application-x-executable {
+  background-image: url(../../img/file-type/application-x-executable.png);
+}
+.file--audio {
+  background-image: url(../../img/file-type/audio-x-generic.png);
+}
+.file--video {
+  background-image: url(../../img/file-type/video-x-generic.png);
+}
+.file--text {
+  background-image: url(../../img/file-type/text-x-generic.png);
+}
+.file--image {
+  background-image: url(../../img/file-type/image-x-generic.png);
+}
