@@ -8,6 +8,10 @@ div#ufic-top-manage {
   }
   .person {
     margin: 0px 0px 40px 40px;
+    p.title {
+      text-align: start;
+      margin: 0px;
+    }
     p:last-child::after {
       content: "";
       display: table;

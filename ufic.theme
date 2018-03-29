@@ -153,6 +153,7 @@ function ufic_preprocess_node(array &$variables) {
 		'ufic-structure',
 		'ufic-history',
 		'ufic-invoice',
+		'ufic-resume',
 		'ufic-docs',
 	];
 
@@ -219,6 +220,11 @@ function ufic_preprocess_field(array &$variables) {
 	return;
 }
 
+function ufic_preprocess_field__field_ufic_catalog_files(&$variables) {
+
+	return;
+}
+
 function ufic_preprocess_file_link(array &$variables) {
 
 	$node = \Drupal::request();
@@ -245,6 +251,8 @@ function ufic_preprocess_file_link(array &$variables) {
 	$generatedLinkObject->setGeneratedLink($generatedLinkString);
 
 	$variables['link'] = $generatedLinkObject;
+
+	return;
 }
 
 function ufic_theme_suggestions_field_alter(array &$suggestions, array $variables) {
