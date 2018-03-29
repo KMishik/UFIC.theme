@@ -22,12 +22,6 @@ div#ufic-history {
     div#ufic-history .content p {
       margin: 0px 0px 10px 0px;
       text-indent: 30px; }
-      div#ufic-history .content p::before {
-        font-family: FontAwesome;
-        content: '\f299';
-        color: #b1069b;
-        position: relative;
-        left: -15px; }
 
 div#ufic-invoice {
   text-align: justify; }
@@ -37,6 +31,37 @@ div#ufic-invoice {
     font-weight: bold;
     text-align: center;
     margin: 15px 0px 30px 0px; }
+
+#ufic-resume .title {
+  font-family: Georgia;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0px 25px 0px; }
+
+#ufic-resume .table {
+  display: table;
+  margin: 0px 10px 10px 10px;
+  border-collapse: collapse; }
+
+#ufic-resume .row {
+  display: table-row; }
+  #ufic-resume .row > .cell:first-child {
+    width: 30%;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center; }
+  #ufic-resume .row a {
+    text-decoration: underline; }
+
+#ufic-resume .cell {
+  display: table-cell;
+  line-height: 2em;
+  height: 70px;
+  padding-left: 10px;
+  border: 1px groove ghostwhite;
+  text-align: left;
+  vertical-align: middle; }
 
 div#ufic-structure .title {
   font-family: Georgia;
@@ -60,6 +85,9 @@ div#ufic-top-manage > p {
 
 div#ufic-top-manage .person {
   margin: 0px 0px 40px 40px; }
+  div#ufic-top-manage .person p.title {
+    text-align: start;
+    margin: 0px; }
   div#ufic-top-manage .person p:last-child::after {
     content: "";
     display: table;

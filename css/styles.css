@@ -698,32 +698,19 @@ aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row {
     font-style: italic;
     color: #0a001f;
     text-align: justify;
-    margin: 0px 5px 10px 0px; }
+    margin: 5px 5px 10px 0px;
+    text-indent: 10px; }
     aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row [class*="field-title"] .field-content a {
       color: rgba(0, 0, 0, 0.5); }
-    aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row [class*="field-title"] .field-content::before {
-      font-family: FontAwesome;
-      font-size: 100%;
-      color: green;
-      padding-right: 5px;
-      content: "\f299"; }
   aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row:first-child [class*="field-title"] {
     font-style: normal; }
     aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row:first-child [class*="field-title"] .field-content a {
       color: inherit; }
-    aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row:first-child [class*="field-title"] .field-content::before {
-      content: "\f1ea";
-      font-size: 150%;
-      color: red; }
 
 aside.layout-sidebar-second [id*="ufic-local-news-view"] .view-local-news-block > .contextual + .views-row [class*="field-title"] {
   font-style: normal; }
   aside.layout-sidebar-second [id*="ufic-local-news-view"] .view-local-news-block > .contextual + .views-row [class*="field-title"] .field-content a {
     color: inherit; }
-  aside.layout-sidebar-second [id*="ufic-local-news-view"] .view-local-news-block > .contextual + .views-row [class*="field-title"] .field-content::before {
-    content: "\f1ea";
-    font-size: 150%;
-    color: red; }
 
 #ufic-footer {
   display: -webkit-box;

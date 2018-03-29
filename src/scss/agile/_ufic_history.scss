@@ -12,13 +12,13 @@ div#ufic-history{
 		p {
 			margin: 0px 0px 10px 0px;
 			text-indent: 30px;
-			&::before {
-				font-family: FontAwesome;
-				content: '\f299';
-				color: #b1069b;
-				position: relative;
-				left: -15px;
-			}
+			// &::before {
+			// 	font-family: FontAwesome;
+			// 	content: '\f299';
+			// 	color: #b1069b;
+			// 	position: relative;
+			// 	left: -15px;
+			// }
 		}
 	}
 }

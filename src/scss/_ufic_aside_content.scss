@@ -12,18 +12,19 @@ aside {
           font-style: italic;
           color: #0a001f;
           text-align: justify;
-          margin: 0px 5px 10px 0px;
+          margin: 5px 5px 10px 0px;
+          text-indent: 10px;
           .field-content {
             a {
               color: rgba(0,0,0,0.5);
             }
-            &::before {
-              font-family: FontAwesome;
-              font-size: 100%;
-              color: green;
-              padding-right: 5px;
-              content: "\f299";
-            }
+            // &::before {
+            //   font-family: FontAwesome;
+            //   font-size: 100%;
+            //   color: green;
+            //   padding-right: 5px;
+            //   content: "\f299";
+            // }
           }
         }
         &:first-child {
@@ -33,11 +34,11 @@ aside {
               a {
                 color: inherit;
               }
-              &::before {
-                content: "\f1ea";
-                font-size: 150%;
-                color: red;
-              }
+              // &::before {
+              //   content: "\f1ea";
+              //   font-size: 150%;
+              //   color: red;
+              // }
             }
           }
         }
@@ -51,11 +52,11 @@ aside {
               a {
                 color: inherit;
               }
-              &::before {
-                content: "\f1ea";
-                font-size: 150%;
-                color: red;
-              }
+              // &::before {
+              //   content: "\f1ea";
+              //   font-size: 150%;
+              //   color: red;
+              // }
             }
           }
         }
