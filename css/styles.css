@@ -596,26 +596,74 @@ ul[class*='submenu'] > li.expanded {
         -moz-border-radius: 3px 3px 3px 3px;
         -webkit-border-radius: 3px 3px 3px 3px;
         padding-left: 5px; }
+#ufic-headline {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  height: 250px;
+  margin: 1em 0px 12px 0px; }
 
+div[id*="block-ufic-citations"] {
+  height: 100%;
+  width: 255px;
+  overflow: hidden; }
+  div[id*="block-ufic-citations"] header img {
+    margin: 0px 10px; }
+  div[id*="block-ufic-citations"] header p {
+    font-size: 12px;
+    opacity: 0.8;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0px 10px; }
+    div[id*="block-ufic-citations"] header p > span {
+      display: block;
+      margin-top: 10px; }
+  div[id*="block-ufic-citations"] .field-content::before {
+    content: "";
+    display: table;
+    clear: both;
+    height: 16px;
+    position: relative; }
+  div[id*="block-ufic-citations"] .field-content p {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 80%;
+    background-color: green;
+    color: white; }
+    div[id*="block-ufic-citations"] .field-content p::before, div[id*="block-ufic-citations"] .field-content p::after {
+      content: '"';
+      display: inline; }
+
+div[id*="citations-shigapov"] header > img {
+  float: left; }
+
+div[id*="citations-shigapov"] .field-content::before {
+  left: 110px;
+  border-top: 16px solid #f3f3f3;
+  border-left: 12px solid green; }
+
+div[id*="citations-khamitov"] header > img {
+  float: right; }
+
+div[id*="citations-khamitov"] .field-content::before {
+  right: -134px;
+  border-top: 16px solid #f3f3f3;
+  border-right: 12px solid green; }
 #block-views-block-bgslider-views-block-block-1, #block-views-block-bgslider-views-block-block-1 #bgslider-active {
   background-repeat: no-repeat;
   background-clip: border-box;
   background-position: top; }
 
 #block-views-block-bgslider-views-block-block-1 {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   align-self: normal;
-  width: 100%;
   height: 100%;
-  margin: 0px 235px 0px 235px;
   background-image: url("/themes/custom/ufic/img/bgslides/1.jpg"); }
   #block-views-block-bgslider-views-block-block-1 #bgslider-active {
     display: block;
-    width: 100%;
+    width: 750px;
     height: 100%;
     background-image: url("/themes/custom/ufic/img/bgslides/0.jpg");
     transition: opacity 3s linear;
@@ -688,6 +736,46 @@ div[id*='rss-yandex-bash'] div[class*='description'], div[id*='rss-yandex-russia
 .layout-content #ufic-content .ufic-news-full > div:nth-of-type(3) {
   text-align: justify; }
 
+div.citations-page a {
+  text-decoration: underline;
+  color: blue; }
+
+div.citations-page header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin: 10px 10px 0px 0px; }
+  div.citations-page header p {
+    margin: 0 auto auto auto;
+    text-align: center;
+    font-family: Georgia, Helvetica, sans-serif; }
+    div.citations-page header p span {
+      display: block; }
+      div.citations-page header p span:nth-of-type(1) {
+        font-size: 130%;
+        font-weight: bold;
+        margin-bottom: 5px; }
+      div.citations-page header p span:nth-of-type(2) {
+        font-size: 160%;
+        font-style: italic;
+        margin-bottom: 25px; }
+      div.citations-page header p span:nth-of-type(3) {
+        font-size: 90%; }
+
+div.citations-page .views-row {
+  margin: 20px 10px 0px 0px; }
+  div.citations-page .views-row::before {
+    content: ". . .";
+    display: block;
+    text-align: center; }
+  div.citations-page .views-row .field-content p {
+    text-indent: 20px;
+    text-align: justify; }
+    div.citations-page .views-row .field-content p::before, div.citations-page .views-row .field-content p::after {
+      content: '"';
+      display: inline; }
 aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row {
   font-family: Georgia, Helvetica, sans-serif; }
   aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row [class*="field-created"] {
@@ -789,7 +877,9 @@ html {
 body {
   background: #f3f3f3;
   font-family: Roboto, Calibri, Vernada;
-  min-width: 1000px; }
+  min-width: 1260px;
+  max-width: 1260px;
+  margin: auto; }
 
 html {
   -webkit-tap-highlight-color: transparent; }
@@ -818,7 +908,7 @@ main a, footer a, footer a {
 
 #ufic-header.sticky {
   position: fixed;
-  width: 100%;
+  width: 1260px;
   top: 0;
   z-index: 101; }
 
@@ -937,16 +1027,6 @@ footer > div {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1; }
-
-#ufic-headline {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  height: 250px;
-  margin: 1em 0px 12px 0px; }
 
 #ufic-sidebar-first img,
 #ufic-sidebar-second img {

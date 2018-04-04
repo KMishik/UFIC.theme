@@ -3,9 +3,11 @@
 @import 'ufic_header_top';
 @import 'ufic_main_menu';
 @import 'search_block_page';
+@import 'ufic_headline';
 @import 'ufic_bgslider';
 @import 'ufic_rss_news';
 @import 'ufic_layout_content';
+@import 'citations_page';
 @import 'ufic_aside_content';
 @import 'ufic_footer';
 @import 'ufic_news_full';
@@ -23,7 +25,9 @@ html {
 body {
   background: #f3f3f3;
   font-family: Roboto, Calibri, Vernada;
-  min-width: 1000px;
+  min-width: $body_width;
+  max-width: $body_width;
+  margin: auto;
 }
 
 html {
@@ -61,7 +65,7 @@ main, footer {
 }
 #ufic-header.sticky {
   position: fixed;
-  width: 100%;
+  width: $body_width;
   top: 0;
   z-index: 101;
 }
@@ -181,13 +185,6 @@ footer > div {
   nav {
     @include flex(1);
   }
-}
-
-#ufic-headline {
-  @include flexbox();
-  align-items: center;
-  height: 250px;
-  margin: 1em 0px 12px 0px;
 }
 
 #ufic-sidebar-first,

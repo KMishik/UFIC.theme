@@ -6,17 +6,17 @@
 
 #block-views-block-bgslider-views-block-block-1 {
   @extend %bgSliderPosition;
-  @include flex(1);
+  //@include flex(1);
   align-self: normal;
-  width: 100%;
+  //width: 100%;
   height: 100%;
-  margin: 0px 235px 0px 235px;
+  //margin: 0px 235px 0px 235px;
   background-image: url('/themes/custom/ufic/img/bgslides/1.jpg');
 	
 	#bgslider-active {
 	  @extend %bgSliderPosition;
 		display: block;
-    width: 100%;
+    width: $slider_width;
     height: 100%;
     background-image: url('/themes/custom/ufic/img/bgslides/0.jpg');
 		transition: opacity 3s linear;
@@ -24,7 +24,7 @@
 
     &.hidden {
       opacity: 0;
-    } 
+    }
 	}
 }
 
