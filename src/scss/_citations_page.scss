@@ -1,0 +1,49 @@
+div.citations-page {
+  a {
+    text-decoration: underline;
+    color: blue;
+  }
+  header {
+    @include flexbox();
+    margin: 10px 10px 0px 0px;
+    p {
+      margin: 0 auto auto auto;
+      text-align: center;
+      font-family: Georgia, Helvetica, sans-serif;
+      span {
+        display: block;
+        &:nth-of-type(1){
+          font-size: 130%;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        &:nth-of-type(2) {
+          font-size: 160%;
+          font-style: italic;
+          margin-bottom: 25px;
+        }
+        &:nth-of-type(3) {
+          font-size: 90%;
+        }
+      }
+    }
+  }
+  .views-row {
+    margin: 20px 10px 0px 0px;
+    &::before {
+      content: ". . .";
+      display: block;
+      text-align: center;
+    }
+    .field-content {
+      p {
+        text-indent: 20px;
+        text-align: justify;
+        &::before, &::after {
+          content: '"';
+          display: inline;
+        }
+      }
+    }
+  }
+}

@@ -331,6 +331,11 @@ function ufic_preprocess_views_view_field(array &$variables) {
 	$output = $variables['field']->advancedRender($variables['row']);
 	return;
 }
+
+function ufic_preprocess_views_view_field__field_ufic_citations(array &$variables) {
+
+	return;
+}
 /*
  * For retemplate single field use next template convention and create own template in theme's templates dir.
  * views-view-field--[view_machine_name]--[page OR block machine_name OR LEAVE this to affect all displays]--[field-machine_name].html.twig
