@@ -28,7 +28,7 @@ div[id*="block-ufic-citations"] {
   .field-content {
     &::before {
       content: "";
-      display: table;
+      display: block;
       clear: both;
       height: $cite_arrow_height;
       position: relative;
@@ -70,7 +70,7 @@ div[id*="citations-khamitov"] {
   }
   .field-content {
     &::before {
-      right: -134px;
+      right: 109px;
       border-top: $cite_arrow_height solid #f3f3f3;
       border-right: $cite_arrow_width solid green;
     }
