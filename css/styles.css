@@ -623,7 +623,7 @@ div[id*="block-ufic-citations"] {
       margin-top: 10px; }
   div[id*="block-ufic-citations"] .field-content::before {
     content: "";
-    display: table;
+    display: block;
     clear: both;
     height: 16px;
     position: relative; }
@@ -649,7 +649,7 @@ div[id*="citations-khamitov"] header > img {
   float: right; }
 
 div[id*="citations-khamitov"] .field-content::before {
-  right: -134px;
+  right: 110px;
   border-top: 16px solid #f3f3f3;
   border-right: 12px solid green; }
 #block-views-block-bgslider-views-block-block-1, #block-views-block-bgslider-views-block-block-1 #bgslider-active {
