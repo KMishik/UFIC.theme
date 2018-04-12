@@ -5,6 +5,13 @@ use Drupal\Core\Url;
 use Drupal\views\ViewExecutable;
 use Drupal\Core\Field\EntityReferenceFieldItemList;
 
+function ufic_preprocess_page__front (&$variables) {
+
+	$variables['#attached']['library'][] = 'uficajax/uficajax.core';
+
+	return;
+}
+
 function ufic_preprocess_region(array &$variables) {
 
 	$region = $variables['region'];
@@ -93,7 +100,7 @@ function ufic_preprocess_menu__contacts_group(array &$variables) {
 		$url->setOptions($options);
 	}
 
-	$variables['#attached']['library'][] = 'ufic/UFICajax';
+	$variables['#attached']['library'][] = 'ufic/UFICcontactmodal';
 	return;
 }
 
@@ -241,11 +248,5 @@ function ufic_theme_suggestions_views_view_unformatted_alter(array &$suggestions
 		}
 	}
 
-	return;
-}
-
-function ufic_preprocess_views_view_field(array &$variables) {
-
-	$output = $variables['field']->advancedRender($variables['row']);
 	return;
 }

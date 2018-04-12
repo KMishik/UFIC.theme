@@ -1,3 +1,4 @@
+//declare const jQuery: any;
 !function ($) {
     $(document).ready(function () {
         (function () {
