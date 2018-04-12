@@ -1,4 +1,4 @@
-declare const jQuery: any;
+//declare const jQuery: any;
 
 ! function($) {
 	$(document).ready(function() {

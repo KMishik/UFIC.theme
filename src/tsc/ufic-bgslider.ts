@@ -1,4 +1,4 @@
-declare const $: any;
+//declare const $: any;
 class BgSlider {
 
 	private imgPool: string[] = [

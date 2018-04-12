@@ -44,11 +44,11 @@ UFICbgslider:
   dependencies:
     - core/jquery
 
-UFICajax:
+UFICcontactmodal:
   version: 1.0.0
   css:
     theme:
-      css/uficajax.css: {}
+      css/uficcontactmodal.css: {}
   dependencies:
     - core/drupal.dialog.ajax
 

@@ -1,3 +1,4 @@
+//declare const $: any;
 var BgSlider = /** @class */ (function () {
     function BgSlider() {
         this.imgPool = [

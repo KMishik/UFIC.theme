@@ -16,10 +16,26 @@
 #}
 <div{{ attributes }}>
   <div id="citation-ufic">
+    <header>
+      <img src="/sites/default/files/theming/images/shigapov_cit.jpg" />
+      <p>Врио Председателя УФИЦ РАН<span>Зиннур Хайдарович Шигапов</span>
+      </p>
+    </header>
+    <script>(function(){var t = window.sessionStorage.getItem('126');t = JSON.parse(t);
+      document.write("<span class='cite'> <a href='/ufic-citations/" + t.delta +"'>" + t.cite + "</a></span>");})()
+    </script>
   </div>
   {% if content %}
       {{ content }}
   {% endif %}
   <div id="citation-rb">
+    <header>
+      <img src="/sites/default/files/theming/images/khamitov_cit.jpg" />
+      <p>Глава Республики Башкортостан<span>Рустэм Закиевич Хамитов</span>
+      </p>
+    </header>
+    <script>(function(){var t = window.sessionStorage.getItem('125');t = JSON.parse(t);
+				document.write("<span class='cite'> <a href='/rb-citations/" + t.delta +"'>" + t.cite + "</a></span>");})()
+    </script>
   </div>
 </div>
