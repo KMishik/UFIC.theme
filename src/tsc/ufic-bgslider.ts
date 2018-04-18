@@ -1,4 +1,9 @@
 //declare const $: any;
+
+! function($) {
+
+'use strict';
+
 class BgSlider {
 
 	private imgPool: string[] = [
@@ -61,3 +66,4 @@ class BgSlider {
 
 let slider: BgSlider = new BgSlider();
 slider.run();
+}(jQuery);
