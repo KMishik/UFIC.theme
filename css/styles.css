@@ -605,61 +605,8 @@ ul[class*='submenu'] > li.expanded {
 
 /* start import HEADLINE styles */
 #ufic-headline {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
   height: 250px;
   margin: 1em 0px 12px 0px; }
-
-div[id*="block-ufic-citations"] {
-  height: 100%;
-  width: 255px;
-  overflow: hidden; }
-  div[id*="block-ufic-citations"] header img {
-    margin: 0px 10px; }
-  div[id*="block-ufic-citations"] header p {
-    font-size: 12px;
-    opacity: 0.8;
-    font-weight: bold;
-    font-style: italic;
-    margin: 0px 10px; }
-    div[id*="block-ufic-citations"] header p > span {
-      display: block;
-      margin-top: 10px; }
-  div[id*="block-ufic-citations"] .field-content::before {
-    content: "";
-    display: block;
-    clear: both;
-    height: 16px;
-    position: relative; }
-  div[id*="block-ufic-citations"] .field-content p {
-    margin: 0 10px;
-    padding: 5px;
-    font-size: 80%;
-    background-color: green;
-    color: white; }
-    div[id*="block-ufic-citations"] .field-content p::before, div[id*="block-ufic-citations"] .field-content p::after {
-      content: '"';
-      display: inline; }
-
-div[id*="citations-shigapov"] header > img {
-  float: left; }
-
-div[id*="citations-shigapov"] .field-content::before {
-  left: 110px;
-  border-top: 16px solid #f3f3f3;
-  border-left: 12px solid green; }
-
-div[id*="citations-khamitov"] header > img {
-  float: right; }
-
-div[id*="citations-khamitov"] .field-content::before {
-  right: 110px;
-  border-top: 16px solid #f3f3f3;
-  border-right: 12px solid green; }
 
 /* start import BgSlider styles */
 #block-views-block-bgslider-views-block-block-1, #block-views-block-bgslider-views-block-block-1 #bgslider-active {
@@ -668,8 +615,9 @@ div[id*="citations-khamitov"] .field-content::before {
   background-position: top; }
 
 #block-views-block-bgslider-views-block-block-1 {
-  align-self: normal;
+  width: 750px;
   height: 100%;
+  margin: auto;
   background-image: url("/themes/custom/ufic/img/bgslides/1.jpg"); }
   #block-views-block-bgslider-views-block-block-1 #bgslider-active {
     display: block;
@@ -747,48 +695,6 @@ div[id*='rss-yandex-bash'] div[class*='description'], div[id*='rss-yandex-russia
 
 .layout-content #ufic-content .ufic-news-full > div:nth-of-type(3) {
   text-align: justify; }
-
-/* start import CITATIONS PAGE CONTENT styles */
-div.citations-page a {
-  text-decoration: underline;
-  color: blue; }
-
-div.citations-page header {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  margin: 10px 10px 0px 0px; }
-  div.citations-page header p {
-    margin: 0 auto auto auto;
-    text-align: center;
-    font-family: Georgia, Helvetica, sans-serif; }
-    div.citations-page header p span {
-      display: block; }
-      div.citations-page header p span:nth-of-type(1) {
-        font-size: 130%;
-        font-weight: bold;
-        margin-bottom: 5px; }
-      div.citations-page header p span:nth-of-type(2) {
-        font-size: 160%;
-        font-style: italic;
-        margin-bottom: 25px; }
-      div.citations-page header p span:nth-of-type(3) {
-        font-size: 90%; }
-
-div.citations-page .views-row {
-  margin: 20px 10px 0px 0px; }
-  div.citations-page .views-row::before {
-    content: ". . .";
-    display: block;
-    text-align: center; }
-  div.citations-page .views-row .field-content p {
-    text-indent: 20px;
-    text-align: justify; }
-    div.citations-page .views-row .field-content p::before, div.citations-page .views-row .field-content p::after {
-      content: '"';
-      display: inline; }
 
 /* start import UFIC ASIDE styles */
 aside.layout-sidebar-second [id*="ufic-local-news-view"] .views-row {
@@ -896,9 +802,7 @@ html {
 body {
   background: #f3f3f3;
   font-family: Roboto, Calibri, Vernada;
-  min-width: 1260px;
-  max-width: 1260px;
-  margin: auto; }
+  min-width: 1000px; }
 
 /* bootstrap styles start */
 html {
@@ -929,7 +833,7 @@ main a, footer a, footer a {
 /* Sticky Header Menu */
 #ufic-header.sticky {
   position: fixed;
-  width: 1260px;
+  width: 100%;
   top: 0;
   z-index: 101; }
 

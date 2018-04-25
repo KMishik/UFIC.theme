@@ -1,6 +1,6 @@
 //declare const $: any;
 !function ($) {
-    'use strict';
+    "use strict";
     var BgSlider = /** @class */ (function () {
         function BgSlider() {
             this.imgPool = [
