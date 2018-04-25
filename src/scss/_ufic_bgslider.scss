@@ -7,11 +7,9 @@
 
 #block-views-block-bgslider-views-block-block-1 {
   @extend %bgSliderPosition;
-  //@include flex(1);
-  align-self: normal;
-  //width: 100%;
+  width: 750px;
   height: 100%;
-  //margin: 0px 235px 0px 235px;
+  margin: auto;
   background-image: url('/themes/custom/ufic/img/bgslides/1.jpg');
 	
 	#bgslider-active {
