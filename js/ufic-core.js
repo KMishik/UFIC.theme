@@ -1,6 +1,6 @@
 //declare const jQuery: any;
 !function ($) {
-    'use strict';
+    "use strict";
     $(document).ready(function () {
         (function () {
             $(".open-form").click(function () {

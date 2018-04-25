@@ -16,8 +16,6 @@
 @import 'ufic_rss_news';
 /* start import UFIC CONTENT styles */
 @import 'ufic_layout_content';
-/* start import CITATIONS PAGE CONTENT styles */
-@import 'citations_page';
 /* start import UFIC ASIDE styles */
 @import 'ufic_aside_content';
 /* start import UFIC FOOTER styles */
@@ -42,8 +40,6 @@ body {
   background: #f3f3f3;
   font-family: Roboto, Calibri, Vernada;
   min-width: $body_width;
-  max-width: $body_width;
-  margin: auto;
 }
 
 /* bootstrap styles start */
@@ -85,7 +81,7 @@ main, footer {
 /* Sticky Header Menu */
 #ufic-header.sticky {
   position: fixed;
-  width: $body_width;
+  width: 100%;
   top: 0;
   z-index: 101;
 }
