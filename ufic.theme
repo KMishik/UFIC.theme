@@ -115,6 +115,7 @@ function ufic_preprocess_node(array &$variables) {
 		'ufic-invoice',
 		'ufic-resume',
 		'ufic-docs',
+		'ufic-ous',
 	];
 
 	$matches = array();

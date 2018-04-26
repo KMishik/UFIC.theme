@@ -104,20 +104,20 @@ div#ufic-top-manage .person {
 div#ufic-top-manage .person:nth-of-type(1) .name span {
   font-size: 35px; }
 
-div#ufic-prezidium p.title {
+div#ufic-prezidium p.title, div#ufic-ous p.title {
   font-family: Georgia;
   font-size: 130%;
   font-weight: bold;
   text-align: center;
   margin: 15px 0px 20px 0px; }
 
-div#ufic-prezidium table {
+div#ufic-prezidium table, div#ufic-ous table {
   width: 650px;
   margin: auto; }
-  div#ufic-prezidium table th {
+  div#ufic-prezidium table th, div#ufic-ous table th {
     background-color: #3b70b8;
     color: white; }
-  div#ufic-prezidium table td {
+  div#ufic-prezidium table td, div#ufic-ous table td {
     padding: 5px;
     white-space: nowrap; }
 
