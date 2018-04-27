@@ -7,6 +7,10 @@
 @import 'ufic_bgslider';
 @import 'ufic_rss_news';
 @import 'ufic_layout_content';
+<<<<<<< HEAD
+=======
+/* start import UFIC ASIDE styles */
+>>>>>>> develop
 @import 'ufic_aside_content';
 @import 'ufic_footer';
 @import 'ufic_news_full';
@@ -24,7 +28,9 @@ html {
 body {
   background: #f3f3f3;
   font-family: Roboto, Calibri, Vernada;
-  min-width: $body_width;
+  max-width: $body_width;
+  min-width: 1000px;
+  margin: auto;
 }
 
 html {
@@ -62,7 +68,7 @@ main, footer {
 }
 #ufic-header.sticky {
   position: fixed;
-  width: 100%;
+  width: $body_width;;
   top: 0;
   z-index: 101;
 }
