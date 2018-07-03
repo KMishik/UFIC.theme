@@ -14,7 +14,7 @@ bootstrap:
     vendor/bootstrap/js/bootstrap.min.js: {}
   dependencies:
     - core/jquery
-      
+
 font-awesome:
   version: 4.7.0
   css:
@@ -57,5 +57,16 @@ UFICagile:
   css:
     theme:
       css/agile/uficagile.css: {}
+
+UFICcompetition:
+  version: 0.0.1
+  css:
+    theme:
+      css/competition/ufic-competition.css: {}
+  js:
+    js/ufic-competition.js: {}
+  dependencies:
+    - core/jquery
+
 
 

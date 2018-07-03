@@ -1,0 +1,58 @@
+.subdiv {
+  position: relative;
+}
+
+.competition__title {
+  font-family: Georgia;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0px 30px 0px;
+}
+.subdiv__title {
+  font-size: 120%;
+  margin: 10px 0px 0px 0px;
+}
+
+.subdiv__title, .month__title {
+  display: inline-block;
+}
+
+.list_hidden {
+  display: none;
+}
+
+.subdiv__title:hover, .month__title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.month__title {
+  font-size: 110%;
+  margin: 5px 0px 5px 0px;
+  position: relative;
+  left: 20px;
+}
+
+.month__link {
+  color: #102bdd;
+  position: relative;
+  left: 40px;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  &::after {
+    font-family: FontAwesome;
+    content: "\f08e";
+    color: blue;
+    padding-left: 10px;
+  }
+}
+
+.month__link_type_pdf {
+  background-image: url(../../img/file-type/application-pdf.png);
+}
+
+.month__link_type_doc {
+  background-image: url(../../img/file-type/x-office-document.png);
+}
