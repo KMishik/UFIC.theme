@@ -171,30 +171,28 @@ function ufic_preprocess_node(array &$variables) {
 
 	}
 
+	if ($matches[1] === "scientific-posts-competition") {
+    $variables['#attached']['library'][] = 'ufic/UFICcompetition';
+    return;
+  }
 	return;
 }
 
 function ufic_preprocess_node__ufic_news__full(array &$variables) {
 
-	$elements = $variables['elements'];
-	if (!array_key_exists('field_ufic_news_taxon', $elements)) {
-		return;
-	}
+	$termArray = $variables['node']->get('field_ufic_news_taxon')->referencedEntities();
 
-	$taxonItemsList = $elements['field_ufic_news_taxon']['#items'];
-	$countTags = $taxonItemsList->count();
+	foreach ($termArray as $term) {
 
-	for ($i = 0; $i < $countTags; $i++) {
-
-		$tag = $elements['field_ufic_news_taxon'][$i]['#title'];
-
-		if ($tag === 'Поздравления') {
+		if ($term->getName() === 'Поздравления') {
 
 			$variables['content_attributes']['class'] = 'ufic-celebration';
-//		$variables['content']['field_ufic_news_content']['#attributes']['class'][] = 'uficCelebrity';
-			return;
+			//		$variables['content']['field_ufic_news_content']['#attributes']['class'][] = 'uficCelebrity';
+
+			break;
 		}
 	}
+
 	return;
 }
 

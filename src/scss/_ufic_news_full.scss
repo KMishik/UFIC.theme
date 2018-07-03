@@ -10,13 +10,12 @@
 		float: left;
 		margin: 0px 15px 15px 0px;
 	}
-	& > div:nth-of-type(3) {
-		a {
-				color: #102bdd;
-				text-decoration: underline;
-			}
+	& a {
+		color: #102bdd;
+		text-decoration: underline;
 	}
-	& > div:last-of-type {
+	&::after {
+		content: " ";
 		clear: both;
 	}
 	.ufic-news-images-multi-wrapper {

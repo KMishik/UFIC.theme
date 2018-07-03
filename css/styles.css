@@ -495,7 +495,7 @@ ul#ufic-main-menu {
     position: absolute;
     display: none;
     text-align: left;
-    width: 255px;
+    width: 260px;
     border: 1px solid #777777;
     border-top: none;
     background: #CCD4E3;
@@ -752,11 +752,12 @@ aside.layout-sidebar-second [id*="ufic-local-news-view"] .view-local-news-block 
   float: left;
   margin: 0px 15px 15px 0px; }
 
-.ufic-news-full > div:nth-of-type(3) a {
+.ufic-news-full a {
   color: #102bdd;
   text-decoration: underline; }
 
-.ufic-news-full > div:last-of-type {
+.ufic-news-full::after {
+  content: " ";
   clear: both; }
 
 .ufic-news-full .ufic-news-images-multi-wrapper {
